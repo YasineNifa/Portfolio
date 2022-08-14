@@ -19,6 +19,7 @@
 }
 .skill {
   line-height: 3.5vw;
+  font-size: 16px;
 }
 .skill-bars {
   font-size: 28px;
@@ -30,6 +31,10 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+}
+.skills-heading{
+  font-size: 40px;
+  font-weight: 400;
 }
 .skills-container > * {
   flex: 1;

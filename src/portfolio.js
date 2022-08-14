@@ -44,7 +44,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "Skills",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
@@ -128,10 +128,9 @@ const educationInfo = {
       logo: require("./assets/images/téléchargement.png"),
       subHeader: "Master of IA and Embedding System",
       duration: "September 2018 - August 2020",
-      // desc: "Participated in the research of XXX and published 3 papers.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      desc:
+        "Took courses about Embedding System Developement",
+      descBullets: ["Ranked top 2 in the program."]
     },
     {
       schoolName: "ENSIAS",
@@ -139,8 +138,8 @@ const educationInfo = {
       subHeader: "Computer Science Engineer",
       duration: "September 2015 - August 2018",
       desc:
-        "Ranked top 1 in the program. Took courses about Software Engineering, Web Developement, Operating Systems, ...",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+        "Took courses about Software Engineering, Web Developement, Operating Systems",
+      descBullets: ["Ranked top 1 in the program."]
     }
   ]
 };
@@ -260,8 +259,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: process.env.REACT_APP_GITHUB_USERNAME,
+  githubConvertedToken: env.REACT_APP_GITHUB_TOKEN,
+  githubUserName: env.REACT_APP_GITHUB_USERNAME,
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };

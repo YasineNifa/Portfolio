@@ -17,11 +17,12 @@
 }
 
 .skills-heading {
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 400;
 }
 .subTitle {
   color: #868e96;
+  font-size: 16px;
 }
 
 /* Media Query */
