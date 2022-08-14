@@ -171,9 +171,9 @@ const workExperiences = {
       role: "Fullstack Engineer",
       company: "Artex",
       companylogo: require("./assets/images/artex.jfif"),
-      date: "February 2020 – August",
+      date: "May 2021 – Now",
       desc:
-        "Project of Risk Management to predict the delay in supplying auto parts.",
+        "Build websites and provide services",
       descBullets: [
         "Developing front end website architecture. (Reactjs, JS, HTML/CSS)",
         "Developing back-end website applications. (NodeJS, Python)",
