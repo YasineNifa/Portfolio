@@ -15,10 +15,7 @@ export default function Projects() {
   const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
-  useEffect(() => {
-    getRepoData();
-  }, []);
-
+  
   function getRepoData() {
     console.log("${openSource.githubConvertedToken} : ", openSource.githubConvertedToken)
     const client = new ApolloClient({
@@ -75,6 +72,10 @@ export default function Projects() {
         );
       });
   }
+
+  useEffect(() => {
+    getRepoData();
+  }, []);
 
   function setrepoFunction(array) {
     setrepo(array);
