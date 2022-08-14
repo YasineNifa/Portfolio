@@ -4,9 +4,16 @@
 
 import emoji from "react-easy-emoji";
 import env from "react-dotenv";
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 const illustration = {
   animated: true // set to false to use static SVG
+};
+
+const splashScreen = {
+  enabled: true, 
+  animation: splashAnimation,
+  duration: 2000 // Set animation duration as per your animation
 };
 
 const greeting = {
@@ -253,8 +260,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,//"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",
-  githubUserName: process.env.REACT_APP_GITHUB_USERNAME, //"YasineNifa",// Change to your github username to view your profile in Contact Section.
+  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+  githubUserName: process.env.REACT_APP_GITHUB_USERNAME,
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
@@ -439,6 +446,7 @@ const twitterDetails = {
 };
 
 export {
+  splashScreen,
   illustration,
   greeting,
   socialMediaLinks,

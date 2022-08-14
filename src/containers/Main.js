@@ -15,14 +15,17 @@ import Education from "./education/Education";
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import {StyleProvider} from "../contexts/StyleContext";
+import {splashScreen} from "../portfolio";
 import "./Main.css";
 import Profile from "./profile/Profile";
+import SplashScreen from "./splashScreen/SplashScreen";
 
 export default class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDark: false
+      isDark: false,
+      isShowingSplashAnimation: true
     };
   }
 
@@ -32,6 +35,11 @@ export default class Main extends Component {
       localStorage.setItem("isDark", darkPref.matches);
     }
     this.setState({isDark: JSON.parse(localStorage.getItem("isDark"))});
+
+    if(splashScreen.enabled){
+      const splashTimer = setTimeout(() => this.setState({isShowingSplashAnimation: false}), splashScreen.duration)
+      return () => clearTimeout(splashTimer)
+    }
   }
   changeTheme = () => {
     this.setState({isDark: !this.state.isDark}, () => {
@@ -45,22 +53,29 @@ export default class Main extends Component {
         <StyleProvider
           value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
         >
-          <Header />
-          <Greeting />
-          <Skills />
-          <StackProgress />
-          <Education />
-          <WorkExperience />
-          <Projects />
-          <StartupProject />
-          <Achievement />
-          <Blogs />
-          <Talks />
-          <Twitter />
-          <Podcast />
-          <Profile />
-          <Footer />
-          <Top />
+          {this.state.isShowingSplashAnimation && splashScreen.enabled ?
+          (
+            <SplashScreen/>
+          ) : (
+            <>
+              <Header />
+              <Greeting />
+              <Skills />
+              <StackProgress />
+              <Education />
+              <WorkExperience />
+              <Projects />
+              <StartupProject />
+              <Achievement />
+              <Blogs />
+              <Talks />
+              <Twitter />
+              <Podcast />
+              <Profile />
+              <Footer />
+              <Top />
+            </>
+          ) }
         </StyleProvider>
       </div>
     );
