@@ -12,7 +12,7 @@ const greeting = {
   username: "Yassine Nifa",
   title: "Hi all, I'm Yassine",
   subTitle: emoji(
-    "Yassine, Recently Graduated, Has Versatile Skills In Data Science, Deep Learning, And Fullstack Development With Innovative Experiences In The United States, France And Morocco"
+    "A passionate Full Stack Software Developer having an experience of building Web applications with JavaScript / Reactjs and some other cool libraries and frameworks. I have Versatile Skills In Data Science, Deep Learning With Innovative Experiences In The United States, France And Morocco"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ySdNFTlieEu_ZObqYdle22RcbFzQLPwy/view?usp=sharing",
@@ -25,10 +25,9 @@ const socialMediaLinks = {
   github: "https://github.com/YasineNifa",
   linkedin: "https://www.linkedin.com/in/yassinenifa/",
   gmail: "yasine.nifa@gmail.com",
-  // gitlab: "https://gitlab.com/",
+  stackoverflow: "https://stackoverflow.com/users/9107241/yassine",
   // facebook: "https://www.facebook.com/",
   //medium: "https://medium.com/@davidrakosi",
-  //stackoverflow: "https://stackoverflow.com/users/13263979/drakosi",
   //instagram: 'https://www.instagram.com/davidrakosi/',
   //twitter: 'https://twitter.com/davidrakosi_',
   display: true // Set true to display this section, defaults to false
@@ -40,17 +39,11 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+    emoji("⚡ Build complete web application using Django, React"),    
+    emoji("⚡ Integration of third party services such as Firebase/ AWS"),
     emoji("⚡ Build services using Machine Learning and Deep Learning models"),
-    emoji("⚡ Build complete web application using Python-Django"),
-
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-
-    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Web Scraping")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
