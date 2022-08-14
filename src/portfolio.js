@@ -165,8 +165,25 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
+    {
+      role: "Fullstack Engineer",
+      company: "Artex",
+      companylogo: require("./assets/images/artex.jfif"),
+      date: "February 2020 – August",
+      desc:
+        "Project of Risk Management to predict the delay in supplying auto parts.",
+      descBullets: [
+        "Developing front end website architecture. (Reactjs, JS, HTML/CSS)",
+        "Developing back-end website applications. (NodeJS, Python)",
+        "Creating servers and databases. (DynamoDB)",
+        "Designing and developing APIs. (GraphQL)",
+        "WebScraping (puppeteer, selenium, BeautifulSoup)",
+        "Ensuring responsiveness of web-applications",
+        "Designing user interactions on web pages."
+      ]
+    },
     {
       role: "Python Software Engineer",
       company: "Groupe Renault",

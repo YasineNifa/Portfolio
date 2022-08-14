@@ -93,10 +93,11 @@
   text-align: center;
   color: black;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   margin: 0px;
   padding-top: 1.5rem;
   line-height: normal;
+  height: 100px;
 }
 .dark-mode-text {
   color: white !important;
@@ -104,10 +105,10 @@
 .experience-text-date {
   text-align: center;
   color: black;
-  font-size: 20px;
   margin: 0px;
   padding-top: 1rem;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .experience-text-desc {
@@ -117,7 +118,11 @@
 .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+  font-weight: 300;
+  font-size: 15px;
+
 }
+
 
 /* Media Query */
 
