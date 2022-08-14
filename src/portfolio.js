@@ -3,6 +3,7 @@
 // Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
+import env from "react-dotenv";
 
 const illustration = {
   animated: true // set to false to use static SVG
@@ -252,10 +253,10 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "YasineNifa", // Change to your github username to view your profile in Contact Section.
+  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,//"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",
+  githubUserName: process.env.REACT_APP_GITHUB_USERNAME, //"YasineNifa",// Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
