@@ -33,14 +33,16 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 30px;
   line-height: 1.1;
   color: black !important;
+  /*text-align: center;*/
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 20px;
+  /*text-align: center;*/
 }
 
 .greeting-image-div > img {
